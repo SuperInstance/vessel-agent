@@ -1,0 +1,53 @@
+# Vessel Agent System - Python Dependencies
+# F/V EILEEN - Southeast Alaska Commercial Fishing
+
+# ============================================================================
+# CORE DEPENDENCIES
+# ============================================================================
+
+# Network packet capture
+pypcap>=1.2.0          # Raw packet capture (requires WinPcap/Npcap on Windows)
+dpkt>=1.9.7            # Packet parsing
+
+# Data storage
+pyarrow>=12.0.0        # Apache Arrow (columnar in-memory format)
+fastparquet>=2023.0.0  # Alternative Parquet implementation
+
+# Spatial indexing
+h3>=4.0.0              # Uber H3 hexagonal spatial indexing
+
+# NMEA parsing
+pynmea2>=1.18.0        # NMEA sentence parsing
+pyserial>=3.5          # Serial port communication
+
+# ============================================================================
+# OPTIONAL DEPENDENCIES
+# ============================================================================
+
+# Voice interface (STT/TTS)
+openai-whisper>=20231100  # OpenAI Whisper for speech-to-text
+piper-tts>=1.2.0           # Fast local text-to-speech
+
+# Computer vision
+opencv-python>=4.8.0        # Image/video processing
+
+# Machine Learning (future)
+torch>=2.0.0              # PyTorch for ML models
+numpy>=1.24.0              # Numerical computing
+pandas>=2.0.0              # Data analysis
+
+# ============================================================================
+# DEVELOPMENT/TESTING
+# ============================================================================
+
+pytest>=7.4.0             # Testing framework
+pytest-asyncio>=0.21.0    # Async test support
+pytest-cov>=4.1.0         # Coverage reporting
+black>=23.7.0             # Code formatting
+pylint>=2.17.0            # Linting
+
+# ============================================================================
+# MONITORING
+# ============================================================================
+
+psutil>=5.9.0             # System monitoring
